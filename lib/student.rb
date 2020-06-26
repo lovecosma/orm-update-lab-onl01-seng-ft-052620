@@ -2,12 +2,11 @@ require_relative "../config/environment.rb"
 require 'pry'
 
 class Student
-  attr_accessor :name, :grade, :number_of_saves
+  attr_accessor :name, :grade
   attr_reader :id
   @@all = []
 
   def initialize(name, grade, id = nil)
-    @number_of_saves = 0
     @name = name
     @grade = grade
     @id = id
